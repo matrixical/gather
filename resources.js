@@ -30,7 +30,7 @@ const typeLabel = document.getElementById("resources-type");
 const healthLabel = document.getElementById("resources-health");
 const dropsContainer = document.getElementById("resources-drops");
 const itemsData = data["items"];
-const image = document.getElementById("resources-image");
+const imagesContainer = document.getElementById("resources-images");
 
 
 function loadResourceView(resourceDataName) {
@@ -38,7 +38,15 @@ function loadResourceView(resourceDataName) {
     nameLabel.textContent =   "RESOURCE: " + resource["name"];
     typeLabel.textContent =   "TYPE: "     + capitalize(resource["type"]);
     healthLabel.textContent = "HEALTH: "   + resource["hp"];
-    image.src = "atlas/split/" + resource["sprite_names"][0] + ".png";
+    
+    imagesContainer.replaceChildren([]);
+    
+    for (const spriteName of resource["sprite_names"]) {
+        const image = document.createElement("img");
+        image.src = "atlas/split/" + spriteName + ".png";
+        
+        imagesContainer.appendChild(image);
+    }
     
     dropsContainer.replaceChildren([]);
     
