@@ -1,0 +1,424 @@
+:root {
+    --primary: #7eca71;
+    --primary-dark: #e71ea4;
+    --primary-darker: #095297;
+    
+    --outline: #095297;
+    
+    --gold: #ffb41f;
+    --gold-border: #ffffffa3;
+    
+    --focus: #ff7ed3;
+    --border: #ffffff34;
+    
+    --background: #149500;
+    --background-2: #138e00;
+    
+    
+    --text: #ffffff;
+    --text-placeholder: #ffffff91;
+    
+    --panel: #0a68227e;
+    --panel-border: #ffffff25;
+    --shadow: 0 5px 5px #00000046;
+}
+
+
+/* #region Fullscreen */
+html, body {
+    width: 100vw;
+    height: 100dvh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: safe center;
+    
+    margin: 0;
+    overflow: hidden;
+    overflow-y: auto;
+}
+/* #endregion */
+
+
+/* #region Background */
+.background {
+    width: 100vw;
+    height: 100dvh;
+    
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    
+    background: repeating-linear-gradient(
+        45deg,
+        var(--background) 0%,
+        var(--background) 25%,
+        var(--background-2) 25%,
+        var(--background-2) 50%
+    );
+    background-size: 80px 80px;
+    
+    animation: slide 5s linear infinite;
+    border-radius: 0;
+}
+
+@keyframes slide {
+    0% {
+        background-position: 0px 0px;
+    }
+    
+    100% {
+        background-position: -80px 80px;
+    }
+}
+/* #endregion */
+
+
+/* #region Loading */
+/* Code from cssloaders.github.io */
+.loading {
+    width: 64px;
+    height: 64px;
+    aspect-ratio: 1;
+    border: 5px solid #ffffff;
+    border-bottom-color: transparent;
+    border-radius: 50%;;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+/* #endregion */
+
+
+/* #region Styling */
+@font-face {
+    font-family: "baloo2";
+    src: url("./assets/baloo2.ttf") format("truetype");
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "baloo2", sans-serif;
+    font-size: 27px;
+    color: var(--text);
+    line-height: 1.25;
+    align-items: center;
+    scrollbar-width: thin;
+    scrollbar-color: #ffffff8f transparent;
+}
+
+select, ::picker(select) {
+    appearance: base-select;
+}
+
+button, input, select, a {
+    background-color: var(--primary);
+    
+    border-radius: 1rem;
+    border-width: 0.1rem;
+    border-style: outset;
+    border-color: var(--border);
+    
+    outline-width: 0;
+    
+    min-width: 13rem;
+    min-height: 3rem;
+    
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    touch-action: manipulation;
+}
+
+button, input, select, a, span {
+    text-shadow: 
+    -0.06rem -0.06rem 0 var(--outline),
+     0.06rem -0.06rem 0 var(--outline),
+    -0.06rem  0.06rem 0 var(--outline),
+     0.06rem  0.06rem 0 var(--outline),
+    -0.06rem  0rem    0 var(--outline),
+     0.06rem  0rem    0 var(--outline),
+     0rem    -0.06rem 0 var(--outline),
+     0rem     0.06rem 0 var(--outline);
+}
+
+a, span {
+    text-align: center;
+}
+
+a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+button:hover, a:hover, select:hover {
+    background-color: var(--focus) !important;
+    cursor: pointer;
+}
+
+button:active, a:active, select:active {
+    background-color: var(--primary-dark) !important;
+}
+
+button:active, a:active {
+    transform: scale(0.98);
+}
+
+button:disabled, a:disabled {
+    background-color: var(--primary-darker) !important;
+    cursor: not-allowed;
+}
+
+input {
+    background-color: var(--primary-darker);
+}
+
+input::placeholder {
+    color: var(--text-placeholder);
+}
+
+img {
+    min-width: 1.5rem;
+    min-height: 1.5rem;
+    /* max-width: 1.5rem; */
+    /* max-height: 1.5rem; */
+}
+
+option {
+    color: #000000;
+}
+/* #endregion */
+
+
+/* #region Button */
+.icon-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    padding-left: 1rem;
+    padding-right: 1rem;
+    gap: 0;
+    
+    min-width: 5rem;
+    max-width: 5rem;
+    min-height: 5rem;
+    max-height: 5rem;
+}
+
+.icon-button img, .image-button img {
+    max-width: 1.6rem;
+    max-height: 1.6rem;
+}
+
+.image-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    min-width: 3.25rem;
+    min-height: 3.25rem;
+}
+
+#back-button {
+    position: absolute;
+    left: 2rem;
+    top: 2rem;
+    opacity: 0.75;
+}
+/* #endregion */
+
+
+/* #region Hover */
+.hoverable {
+    position: relative;
+    display: inline-flex;
+}
+
+.clickable {
+    position: relative;
+    display: inline-flex;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.hoverable .hover-text, .clickable .click-text {
+    visibility: hidden;
+    opacity: 0;
+    background-color: var(--focus);
+    
+    position: absolute;
+    z-index: 1;
+    gap: 0;
+    
+    border-radius: 1rem;
+    
+    bottom: 150%;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    min-width: 3.5rem;
+    padding: 0.5rem;
+    white-space: nowrap;
+    
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.hoverable:hover .hover-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+.clickable:hover {
+    color: var(--focus);
+}
+/* #endregion */
+
+
+/* #region Size */
+.font-really-large, .font-really-large span, .font-really-large button, .font-really-large a {
+    font-size: 50px;
+}
+
+.font-large, .font-large span, .font-large button, .font-large a {
+    font-size: x-large;
+}
+
+.font-kinda-large, .font-kinda-large span, .font-kinda-large button, .font-kinda-large a {
+    font-size: 20px;
+}
+
+.font-medium, .font-medium span, .font-medium button, .font-medium a {
+    font-size: medium;
+}
+
+.font-small, .font-small span, .font-small button, .font-small a {
+    font-size: small;
+}
+
+.width-medium, .width-medium span, .width-medium button, .width-medium a {
+    min-width: 6rem;
+}
+
+.width-thin, .width-thin span, .width-thin button, .width-thin a {
+    min-width: 4rem;
+    max-width: 4rem;
+}
+/* #endregion */
+
+
+/* #region Direction */
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.horizontal {
+    flex-direction: row;
+}
+
+.text-left {
+    align-items: flex-start;
+}
+
+.text-left span {
+    text-align: left;
+}
+
+.text-right {
+    align-items: flex-end;
+}
+
+.text-right span {
+    text-align: right;
+}
+
+.no-gap {
+    gap: 0;
+}
+/* #endregion */
+
+
+/* #region Panel */
+.panel {
+    background-color: var(--panel);
+    box-shadow: var(--shadow);
+    
+    border-radius: 1rem;
+    border-width: 0.07rem;
+    border-color: var(--panel-border);
+    border-style: solid;
+    
+    padding: 0.7rem;
+}
+/* #endregion */
+
+
+/* #region Biomes */
+#biomes-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#biomes-container button {
+    min-width: 8rem;
+}
+
+#biomes-fish {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+/* #endregion */
+
+
+/* #region Resources */
+#resources-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+/* #endregion */
+
+
+/* #region Items */
+#items-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+/* #endregion */
+
+
+/* #region Tools */
+#items-image, #tools-image, #fish-image {
+    min-width: 4rem;
+    min-height: 4rem;
+}
+
+#tools-view {
+    max-width: 21rem;
+}
+
+#tools-view input {
+    min-height: 1rem;
+}
+/* #endregion */
+
+
+/* #region Fish */
+#fish-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+/* #endregion */

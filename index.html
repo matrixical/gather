@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        
+        <title>Project Gatherwood Info</title>
+        <link id="favicon" rel="icon" type="image/png" href="atlas/split/tool_pickaxe_2.png">
+        
+        <meta name="description" content="Info for Project Gatherwood by Winterpixel Games&#10;Project Gatherwood is a work in progress game, all values are subject to change">
+        
+        <meta property="og:site_name" content="Project Gatherwood Info">
+        <meta property="og:title" content="Project Gatherwood Info">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://matrixical.github.io/gather/">
+        <meta property="og:description" content="Info for Project Gatherwood by Winterpixel Games&#10;Project Gatherwood is a work in progress game, all values are subject to change">
+        
+        <meta name="twitter:title" content="Project Gatherwood Info">
+        <meta name="twitter:url" content="https://matrixical.github.io/gather/">
+        <meta name="twitter:description" content="Info for Project Gatherwood by Winterpixel Games&#10;Project Gatherwood is a work in progress game, all values are subject to change">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#149500">
+    </head>
+    <body>
+        <div class="background"></div>
+        
+        <button id="back-button" class="image-button" style="display: none;">
+            <img src="assets/back.png">
+        </button>
+        
+        <div id="homepage" class="panel">
+            <span class="font-really-large">HOME</span>
+            <div id="homepage-container"></div>
+            <div class="no-gap">
+                <span>Project Gatherwood Info</span>
+                <span class="font-small">Project Gatherwood is a work in progress game</span>
+                <span class="font-small">All values are subject to change</span>
+            </div>
+        </div>
+        
+        <div id="biomes" class="panel container" style="display: none;">
+            <span class="font-really-large">BIOMES</span>
+            <div id="biomes-container"></div>
+        </div>
+        <div id="biomes-view" class="panel view" style="display: none;">
+            <span id="biomes-name" class="font-really-large">BIOME:</span>
+            <span id="biomes-id">ID:</span>
+            <span id="biomes-color">GROUND COLOR:</span>
+            <span>FISH HERE:</span>
+            <div id="biomes-fish"></div>
+        </div>
+        
+        <div id="resources" class="panel container" style="display: none;">
+            <span class="font-really-large">RESOURCES</span>
+            <div id="resources-container"></div>
+        </div>
+        <div id="resources-view" class="panel view" style="display: none;">
+            <span id="resources-name" class="font-really-large">RESOURCE:</span>
+            <span id="resources-type">TYPE:</span>
+            <span id="resources-health">HEALTH:</span>
+            <span>DROPS:</span>
+            <div id="resources-drops"></div>
+            <img id="resources-image">
+        </div>
+        
+        <div id="items" class="panel container" style="display: none;">
+            <span class="font-really-large">ITEMS</span>
+            <div id="items-container"></div>
+        </div>
+        <div id="items-view" class="panel view" style="display: none;">
+            <span id="items-name" class="font-really-large">ITEM:</span>
+            <span id="items-price">SELL PRICE:</span>
+            <span id="items-description">DESCRIPTION:</span>
+            <img id="items-image">
+        </div>
+        
+        <div id="tools" class="panel container" style="display: none;">
+            <span class="font-really-large">TOOLS</span>
+            <div id="tools-container"></div>
+        </div>
+        <div id="tools-view" class="panel view" style="display: none;">
+            <span id="tools-name" class="font-really-large">TOOL:</span>
+            <span id="tools-description">DESCRIPTION:</span>
+            <span id="tools-subdescription" class="font-kinda-large"></span>
+            <span id="tools-upgrade-label">UPGRADE:</span>
+            <input id="tools-upgrade" type="range" min="1" max="10" value="1">
+            <span id="tools-upgrade-cost">UPGRADE COST:</span>
+            <span id="tools-upgrade-xp">UPGRADE XP:</span>
+            <span id="tools-damage">DAMAGE:</span>
+            <img id="tools-image">
+        </div>
+        
+        <div id="enemies" class="panel container" style="display: none;">
+            <span class="font-really-large">ENEMIES</span>
+            <div id="enemies-container"></div>
+        </div>
+        <div id="enemies-view" class="panel view" style="display: none;">
+            <span id="enemies-name" class="font-really-large">ENEMY:</span>
+            <span>DROPS:</span>
+            <div id="enemies-drops"></div>
+        </div>
+        
+        <div id="fish" class="panel container" style="display: none;">
+            <span class="font-really-large">FISH</span>
+            <div id="fish-container"></div>
+        </div>
+        <div id="fish-view" class="panel view" style="display: none;">
+            <span id="fish-name" class="font-really-large">FISH:</span>
+            <span id="fish-family">FAMILY:</span>
+            <span id="fish-rarity">RARITY:</span>
+            <span id="fish-price">SELL PRICE:</span>
+            <span id="fish-description">DESCRIPTION:</span>
+            <span>SPAWNS IN:</span>
+            <div id="fish-spawns-in"></div>
+            <img id="fish-image">
+        </div>
+        
+        <script type="module" src="scenes.js"></script>
+        <script type="module" src="data.js"></script>
+        
+        <script type="module" src="biomes.js"></script>
+        <script type="module" src="resources.js"></script>
+        <script type="module" src="items.js"></script>
+        <script type="module" src="tools.js"></script>
+        <script type="module" src="enemies.js"></script>
+        <script type="module" src="fish.js"></script>
+    </body>
+</html>
