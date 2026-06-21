@@ -3208,210 +3208,210 @@ export const data = {
             "item_type": 96,
             "name": "Brown Chub",
             "sprite_name": "item_fish_1",
-            "revenue": 5,
+            "revenue": 230,
             "desc": "A small, common, brown fish. "
         },
         "item_fish_2": {
             "item_type": 97,
             "name": "Red Chub",
             "sprite_name": "item_fish_2",
-            "revenue": 10,
+            "revenue": 500,
             "desc": "A small, common, red fish. "
         },
         "item_fish_3": {
             "item_type": 98,
             "name": "Blue Chub",
             "sprite_name": "item_fish_3",
-            "revenue": 15,
+            "revenue": 500,
             "desc": "A small, common, blue fish. "
         },
         "item_fish_4": {
             "item_type": 99,
             "name": "Grey Chub",
             "sprite_name": "item_fish_4",
-            "revenue": 20,
+            "revenue": 5000,
             "desc": "A small, rare, grey fish. "
         },
         "item_fish_5": {
             "item_type": 100,
             "name": "Yellow Chub",
             "sprite_name": "item_fish_5",
-            "revenue": 25,
+            "revenue": 3200,
             "desc": "A small, rare, yellow fish. "
         },
         "item_fish_6": {
             "item_type": 101,
             "name": "Grey Dart",
             "sprite_name": "item_fish_6",
-            "revenue": 10,
+            "revenue": 500,
             "desc": "A large, common, grey fish. "
         },
         "item_fish_7": {
             "item_type": 102,
             "name": "Salmon Dart",
             "sprite_name": "item_fish_7",
-            "revenue": 20,
+            "revenue": 410,
             "desc": "A large, common, pink fish. "
         },
         "item_fish_8": {
             "item_type": 103,
             "name": "Blue Dart",
             "sprite_name": "item_fish_8",
-            "revenue": 30,
+            "revenue": 500,
             "desc": "A large, common, blue fish. "
         },
         "item_fish_9": {
             "item_type": 104,
             "name": "Green Dart",
             "sprite_name": "item_fish_9",
-            "revenue": 40,
+            "revenue": 1400,
             "desc": "A large, rare, green fish. "
         },
         "item_fish_10": {
             "item_type": 105,
             "name": "Sky Dart",
             "sprite_name": "item_fish_10",
-            "revenue": 50,
+            "revenue": 1400,
             "desc": "A large, rare, blue and purple fish. "
         },
         "item_fish_11": {
             "item_type": 106,
             "name": "Green Minnow",
             "sprite_name": "item_fish_11",
-            "revenue": 20,
+            "revenue": 140,
             "desc": "A medium, common, green fish. "
         },
         "item_fish_12": {
             "item_type": 107,
             "name": "Mint Minnow",
             "sprite_name": "item_fish_12",
-            "revenue": 40,
+            "revenue": 50,
             "desc": "A medium, common, minty fish. "
         },
         "item_fish_13": {
             "item_type": 108,
             "name": "Pink Minnow",
             "sprite_name": "item_fish_13",
-            "revenue": 60,
+            "revenue": 50,
             "desc": "A medium, common, pink fish. "
         },
         "item_fish_14": {
             "item_type": 109,
             "name": "Tan Minnow",
             "sprite_name": "item_fish_14",
-            "revenue": 80,
+            "revenue": 3200,
             "desc": "A medium, rare, tan fish. "
         },
         "item_fish_15": {
             "item_type": 110,
             "name": "Indigo Minnow",
             "sprite_name": "item_fish_15",
-            "revenue": 100,
+            "revenue": 5000,
             "desc": "A medium, rare, indigo fish. "
         },
         "item_fish_16": {
             "item_type": 111,
             "name": "Blue Reelfish",
             "sprite_name": "item_fish_16",
-            "revenue": 50,
+            "revenue": 500,
             "desc": "A small, common, striped blue fish. "
         },
         "item_fish_17": {
             "item_type": 112,
             "name": "Orange Reelfish",
             "sprite_name": "item_fish_17",
-            "revenue": 100,
+            "revenue": 500,
             "desc": "A small, common, striped orange fish. "
         },
         "item_fish_18": {
             "item_type": 113,
             "name": "Red Reelfish",
             "sprite_name": "item_fish_18",
-            "revenue": 150,
+            "revenue": 500,
             "desc": "A small, common, striped red fish. "
         },
         "item_fish_19": {
             "item_type": 114,
             "name": "Purple Reelfish",
             "sprite_name": "item_fish_19",
-            "revenue": 200,
+            "revenue": 5000,
             "desc": "A small, rare, striped purple fish. "
         },
         "item_fish_20": {
             "item_type": 115,
             "name": "Teal Reelfish",
             "sprite_name": "item_fish_20",
-            "revenue": 250,
+            "revenue": 1400,
             "desc": "A small, rare, striped teal fish. "
         },
         "item_fish_21": {
             "item_type": 116,
             "name": "Yellow Sunfish",
             "sprite_name": "item_fish_21",
-            "revenue": 100,
+            "revenue": 320,
             "desc": "A thin, common, yellow fish. "
         },
         "item_fish_22": {
             "item_type": 117,
             "name": "Mint Sunfish",
             "sprite_name": "item_fish_22",
-            "revenue": 200,
+            "revenue": 50,
             "desc": "A thin, common, minty fish. "
         },
         "item_fish_23": {
             "item_type": 118,
             "name": "Flame Sunfish",
             "sprite_name": "item_fish_23",
-            "revenue": 300,
+            "revenue": 5000,
             "desc": "A thin, rare, orange fish. "
         },
         "item_fish_24": {
             "item_type": 119,
             "name": "Lavender Sunfish",
             "sprite_name": "item_fish_24",
-            "revenue": 400,
+            "revenue": 500,
             "desc": "A thin, rare, purple fish. "
         },
         "item_fish_25": {
             "item_type": 120,
             "name": "Berry Sunfish",
             "sprite_name": "item_fish_25",
-            "revenue": 500,
+            "revenue": 5000,
             "desc": "A thin, legendary, red fish with blue spots. "
         },
         "item_fish_26": {
             "item_type": 121,
             "name": "Amber Fin",
             "sprite_name": "item_fish_26",
-            "revenue": 200,
+            "revenue": 140,
             "desc": "A thick, common, amber fish. "
         },
         "item_fish_27": {
             "item_type": 122,
             "name": "Emerald Fin",
             "sprite_name": "item_fish_27",
-            "revenue": 400,
+            "revenue": 140,
             "desc": "A thick, common, emerald fish. "
         },
         "item_fish_28": {
             "item_type": 123,
             "name": "Azure Fin",
             "sprite_name": "item_fish_28",
-            "revenue": 600,
+            "revenue": 5000,
             "desc": "A thick, rare, blue and yellow fish. "
         },
         "item_fish_29": {
             "item_type": 124,
             "name": "Magenta Fin",
             "sprite_name": "item_fish_29",
-            "revenue": 800,
+            "revenue": 500,
             "desc": "A thick, rare, magenta fish. "
         },
         "item_fish_30": {
             "item_type": 125,
             "name": "Frozen Fin",
             "sprite_name": "item_fish_30",
-            "revenue": 1000,
+            "revenue": 10000,
             "desc": "A thick, legendary, ice water fish. "
         }
     },
@@ -3582,7 +3582,8 @@ export const data = {
             "biomes": [
                 "BIOME_SWAMP",
                 "BIOME_BEACH",
-                "BIOME_PLAINS"
+                "BIOME_PLAINS",
+                "BIOME_FOREST"
             ],
             "weight_min_kg": 0.1,
             "weight_max_kg": 0.4,
@@ -3603,7 +3604,8 @@ export const data = {
             "biomes": [
                 "BIOME_CORALREEF",
                 "BIOME_BEACH",
-                "BIOME_OCEAN"
+                "BIOME_OCEAN",
+                "BIOME_DEEPOCEAN"
             ],
             "weight_min_kg": 0.1,
             "weight_max_kg": 0.4,
@@ -3624,7 +3626,8 @@ export const data = {
             "biomes": [
                 "BIOME_OCEAN",
                 "BIOME_CORALREEF",
-                "BIOME_ROCKYSHORE"
+                "BIOME_ROCKYSHORE",
+                "BIOME_DEEPOCEAN"
             ],
             "weight_min_kg": 0.1,
             "weight_max_kg": 0.5,
@@ -3665,7 +3668,8 @@ export const data = {
             "biomes": [
                 "BIOME_BEACH",
                 "BIOME_SALTFLATS",
-                "BIOME_CORALREEF"
+                "BIOME_CORALREEF",
+                "BIOME_FOREST"
             ],
             "weight_min_kg": 0.2,
             "weight_max_kg": 0.6,
@@ -3789,7 +3793,8 @@ export const data = {
             "biomes": [
                 "BIOME_SWAMP",
                 "BIOME_JUNGLE",
-                "BIOME_BAMBOOGROVE"
+                "BIOME_BAMBOOGROVE",
+                "BIOME_FOREST"
             ],
             "weight_min_kg": 0.5,
             "weight_max_kg": 1.5,
@@ -3892,7 +3897,8 @@ export const data = {
             "size_category": "small",
             "biomes": [
                 "BIOME_OCEAN",
-                "BIOME_CORALREEF"
+                "BIOME_CORALREEF",
+                "BIOME_DEEPOCEAN"
             ],
             "weight_min_kg": 0.2,
             "weight_max_kg": 0.7,
@@ -4056,7 +4062,8 @@ export const data = {
             "size_category": "thin",
             "biomes": [
                 "BIOME_FAIRYGLADE",
-                "BIOME_CHERRYBLOSSOM"
+                "BIOME_CHERRYBLOSSOM",
+                "BIOME_FOREST"
             ],
             "weight_min_kg": 0.4,
             "weight_max_kg": 1.2,
@@ -4072,7 +4079,7 @@ export const data = {
         },
         "item_fish_25": {
             "family": "Sunfish",
-            "rarity": "legendary",
+            "rarity": "common",
             "size_category": "thin",
             "biomes": [
                 "BIOME_FAIRYGLADE",
