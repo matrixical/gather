@@ -1,5 +1,5 @@
 import { loadBiomeView } from "./biomes.js";
-import { data } from "./data.js";
+import { capitalize, data } from "./data.js";
 import { changeScene } from "./scenes.js";
 
 
@@ -44,7 +44,7 @@ export function loadFishView(fishDataName) {
     
     nameLabel.textContent = "FISH: " + fishItem["name"];
     familyLabel.textContent = "FAMILY: " + fish["family"];
-    rarityLabel.textContent = "RARITY: " + fish["rarity"];
+    rarityLabel.textContent = "RARITY: " + capitalize(fish["rarity"]);
     priceLabel.textContent = "SELL PRICE: " + fishItem["revenue"];
     descriptionLabel.textContent = "DESCRIPTION: " + fishItem["desc"] + fish["notes"];
     
