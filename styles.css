@@ -153,6 +153,7 @@ button, input, select, a, span {
 
 a, span {
     text-align: center;
+    text-wrap: balance;
 }
 
 a {
@@ -193,6 +194,7 @@ img {
     min-height: 1.5rem;
     /* max-width: 1.5rem; */
     /* max-height: 1.5rem; */
+    object-fit: contain;
 }
 
 option {
@@ -401,9 +403,9 @@ div {
 
 
 /* #region Tools */
-#items-image, #tools-image, #fish-image {
-    min-width: 4rem;
-    min-height: 4rem;
+.resources-image, #items-image, #tools-image, #fish-image {
+    min-width: 5rem;
+    min-height: 5rem;
 }
 
 #tools-view {
@@ -416,9 +418,21 @@ div {
 /* #endregion */
 
 
+/* #region Enemies */
+#enemies-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+/* #endregion */
+
+
 /* #region Fish */
 #fish-container {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+}
+
+#fish-view {
+    max-width: 21rem
 }
 /* #endregion */

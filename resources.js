@@ -43,6 +43,7 @@ function loadResourceView(resourceDataName) {
     
     for (const spriteName of resource["sprite_names"]) {
         const image = document.createElement("img");
+        image.className = "resources-image";
         image.src = "atlas/split/" + spriteName + ".png";
         
         imagesContainer.appendChild(image);

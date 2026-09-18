@@ -8,6 +8,7 @@ const enemiesContainer = document.getElementById("enemies-container");
 
 for (const [enemyDataName, enemy] of Object.entries(enemiesData)) {
     const button = document.createElement("button");
+    button.className = "icon-button";
     
     button.appendChild(document.createTextNode(enemy["name"]));
     

@@ -25,7 +25,6 @@ for (const [toolDataName, tool] of Object.entries(toolsData)) {
 
 
 const nameLabel = document.getElementById("tools-name");
-const priceLabel = document.getElementById("tools-price");
 const descriptionLabel = document.getElementById("tools-description");
 const subdescriptionLabel = document.getElementById("tools-subdescription");
 const upgradeLabel = document.getElementById("tools-upgrade-label");
